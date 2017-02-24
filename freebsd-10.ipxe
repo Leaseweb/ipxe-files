@@ -1,0 +1,5 @@
+#!ipxe
+
+kernel http://boot.leaseweb.com/memdisk raw
+initrd http://boot.leaseweb.com/freebsd_10.3_amd64/freebsd_10.3_amd64.img
+boot
