@@ -1,7 +1,5 @@
 #!ipxe
 
-cpuid --ext 29 && set arch amd64 || set arch i386
-
-kernel http://boot.leaseweb.com/rescue_3.0_${arch}/vmlinuz lang=us fetch=http://boot.leaseweb.com/rescue_3.0_${arch}/grml.squashfs ssh=r3squ3p4ssw0rd boot=live noquick ethdevice-timeout=0 ipv6.disable=1 ip=${net0/ip}::${net0/gateway}:${net0/netmask}:lswrescue:eth0:off
-initrd http://boot.leaseweb.com/rescue_3.0_${arch}/initrd.img
+kernel http://boot.leaseweb.com/memdisk raw
+initrd https://mirror.leaseweb.com/grml/devel/grml64-small_20160415_netboot_xyz.iso
 boot
