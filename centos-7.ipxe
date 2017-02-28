@@ -1,6 +1,6 @@
 #!ipxe
 
-set base https://mirror.leaseweb.com/centos/7/os/x86_64
+set base http://mirror.leaseweb.com/centos/7/os/x86_64
   
 kernel ${base}/images/pxeboot/vmlinuz initrd=initrd.img repo=${base}
 initrd ${base}/images/pxeboot/initrd.img

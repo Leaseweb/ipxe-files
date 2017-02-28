@@ -2,8 +2,8 @@
 
 # See http://developer.leaseweb.com/blog/ for a tutorial on installing Windows.
 
-kernel https://boot.leaseweb.com/wimboot
-initrd https://boot.leaseweb.com/winpe-clean-current/media/Boot/BCD            BCD
-initrd https://boot.leaseweb.com/winpe-clean-current/media/Boot/boot.sdi       boot.sdi
-initrd https://boot.leaseweb.com/winpe-clean-current/media/sources/boot.wim    boot.wim
+kernel http://boot.leaseweb.com/wimboot
+initrd http://boot.leaseweb.com/winpe-clean-current/media/Boot/BCD            BCD
+initrd http://boot.leaseweb.com/winpe-clean-current/media/Boot/boot.sdi       boot.sdi
+initrd http://boot.leaseweb.com/winpe-clean-current/media/sources/boot.wim    boot.wim
 boot
