@@ -1,0 +1,7 @@
+#!ipxe
+
+cpuid --ext 29 && set arch amd64
+
+initrd http://mirror.leaseweb.com/ubuntu/dists/bionic-updates/main/installer-${arch}/current/images/netboot/ubuntu-installer/${arch}/initrd.gz
+kernel http://mirror.leaseweb.com/ubuntu/dists/bionic-updates/main/installer-${arch}/current/images/netboot/ubuntu-installer/${arch}/linux -- ip=dhcp ksdevice=${mac} hostname=localhost
+boot
