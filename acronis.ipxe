@@ -1,0 +1,3 @@
+#!ipxe
+initrd http://boot.leaseweb.com/acronis/latest/Boot_media.iso
+chain http://boot.leaseweb.com/memdisk iso
