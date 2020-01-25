@@ -4,7 +4,9 @@ set arch amd64
 set dist buster
 
 set base http://mirror.leaseweb.com/debian/dists/${dist}/main/installer-${arch}/current/images/netboot/debian-installer/${arch}
-  
-kernel ${base}/linux locale=en_US.UTF-8 interface=auto hostname=localhost --
+set base_nonfree http://cdimage.debian.org/cdimage/unofficial/non-free/firmware/${dist}/current
+
+kernel ${base}/linux linitrd=initrd.gz initrd=firmware.cpio.gz locale=en_US.UTF-8 interface=auto hostname=localhost --
 initrd ${base}/initrd.gz
+initrd ${base_nonfree}/firmware.cpio.gz
 boot
