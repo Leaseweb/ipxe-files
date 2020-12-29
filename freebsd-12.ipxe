@@ -2,6 +2,6 @@
 
 # Root password for all images: mfsroot
 
-kernel http://boot.leaseweb.com/memdisk raw
-initrd http://boot.leaseweb.com/mfsbsd/mfsbsd-12.0-RELEASE-amd64.iso
+kernel http://boot.leaseweb.com/lswasp-freebsd/current/memdisk raw
+initrd http://boot.leaseweb.com/lswasp-freebsd/current/mfsbsd.img
 boot
