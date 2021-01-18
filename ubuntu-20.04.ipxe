@@ -5,7 +5,7 @@ cpuid --ext 29
 set arch amd64
 set dist focal
 
-set base http://mirror.leaseweb.com/ubuntu/dists/${dist}/main/installer-${arch}/current/images/netboot/ubuntu-installer/${arch}
+set base http://mirror.leaseweb.com/ubuntu/dists/${dist}/main/installer-${arch}/current/legacy-images/netboot/ubuntu-installer/${arch}
 set base_nonfree http://cdimage.debian.org/cdimage/unofficial/non-free/firmware/stable/current
 
 kernel ${base}/linux linitrd=initrd.gz linitrd=firmware.cpio.gz locale=en_US.UTF-8 interface=auto ip=dhcp --
