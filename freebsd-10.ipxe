@@ -1,7 +1,0 @@
-#!ipxe
-
-# Root password for all images: mfsroot
-
-kernel http://boot.leaseweb.com/memdisk raw
-initrd http://boot.leaseweb.com/mfsbsd/mfsbsd-10.3-RELEASE-amd64.iso
-boot

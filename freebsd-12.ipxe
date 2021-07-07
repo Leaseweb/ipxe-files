@@ -1,7 +1,2 @@
 #!ipxe
-
-# Root password for all images: mfsroot
-
-kernel http://boot.leaseweb.com/lswasp-freebsd/current/memdisk raw
-initrd http://boot.leaseweb.com/lswasp-freebsd/current/mfsbsd.img
-boot
+sanboot http://mirror.leaseweb.com/freebsd/releases/ISO-IMAGES/12.2/FreeBSD-12.2-RELEASE-amd64-bootonly.iso
